@@ -16,13 +16,11 @@ var configuration = Argument("configuration", "Release");
 
 Setup(context =>
 {
-   // Executed BEFORE the first task.
    Information("Running Setup");
 });
 
 Teardown(context =>
 {
-   // Executed AFTER the last task.
    Information("Running Teardown.");
 });
 
