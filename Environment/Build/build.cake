@@ -12,13 +12,13 @@ var configuration = Argument("configuration", "Release");
 Setup(context =>
 {
    // Executed BEFORE the first task.
-   Information("Running tasks...");
+   Information("Running Setup");
 });
 
 Teardown(context =>
 {
    // Executed AFTER the last task.
-   Information("Finished running tasks.");
+   Information("Running Teardown.");
 });
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -27,7 +27,7 @@ Teardown(context =>
 
 Task("Default")
 .Does(() => {
-   Information("Hello Cake!");
+   Information("Running Default.");
 });
 
 RunTarget(target);
